@@ -1,0 +1,476 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.logo {
+  width: 200px;
+}
+
+/* LOGIN */
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  /* background:url('../src/assets/images/login.png') no-repeat; */
+}
+
+.login-form .card {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* DASHBOARD */
+main {
+  display: flex;
+  /* gap:10px; */
+
+}
+
+.card-header-tech {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #000;
+  align-items: center;
+  margin-right: 6px
+}
+
+.card-header-tech h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 4px;
+  color: #164863;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+
+.card-header-tech-P {
+  background: #b7e7f9db;
+  display: flex;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  border-radius: 10px
+}
+
+.card-header-tech-P p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main-content-wrapper {
+  background: #fff;
+  width: 100%;
+  height: calc(100vh - 95px);
+  overflow: auto;
+}
+
+/* SIDEBAR */
+aside .side-nav {
+  width: 250px;
+  height: 100vh;
+  background-color: #164863 !important;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+/* .sidebarnav-list {
+  height: calc(100vh - 95px) !important;
+  overflow: auto;
+} */
+
+.sidebar-list a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  width: 100%;
+  display: block;
+
+}
+span.icon-sidebar {
+  font-size: 20px;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+.sidebar-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 30px;
+  padding-bottom: 100px !important;
+}
+
+.sidebar-list li:hover a {
+  color: #0eb4e9;
+}
+
+.sidebar-list li a:focus {
+  background: #b7e7f9db;
+  color: #000;
+}
+ul.sidebar-list li a h6{
+  margin-top: 0.8rem !important;
+  margin-bottom: 0.8rem !important;
+  margin-left: 0.8rem !important;
+}
+
+.ErrBackground {
+  background-color: #062740;
+
+}
+
+.ErrContent {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding: 15%;
+}
+
+.main-form-div {
+  margin: 45px;
+}
+
+.main-div {
+  border: 1px solid #00000028;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.header-div {
+  display: flex;
+  font-size: small;
+}
+
+.top-para {
+  margin: 5px;
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.companyName {
+  font-size: 1.1em;
+  font-family: 'montserrat' sans-serif;
+  font-weight: 500;
+}
+
+.companyName-span-A {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+.company-logo {
+  height: 45px;
+  margin-right: 20px;
+  float: right
+}
+
+.bottom-para {
+  margin-left: 70% !important;
+  padding-top: 24px;
+}
+
+.tableName {
+  width: 100%;
+  border-collapse: collapse;
+  padding-left: 20px;
+}
+
+.tableName,
+.headerName,
+.headerName-1,
+.tableDataAmt,
+.tableData,
+.tableData-1 {
+  border: 1px solid black;
+}
+
+.input-field1 {
+  width: 100%;
+  font-size: small;
+  border: 1px solid #f5f6f5 !important;
+  text-align: right;
+  padding: 1px;
+}
+
+.tableData,
+.tableDataAmt {
+  font-size: 11px;
+  padding-left: 2px;
+  font-weight: 400;
+
+}
+
+.tableData-1 {
+  font-weight: 600;
+  font-size: 11px;
+  padding-left: 2px;
+}
+
+.tableData-1 input {
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.headerName {
+  background: linear-gradient(#c8e0e7, #e1eef4);
+  text-align: center;
+  padding: 2px;
+}
+
+.headerName-1 {
+  background: linear-gradient(#c8e0e7, #e1eef4);
+  padding: 2px;
+  padding-right: 2px;
+  font-size: 12px;
+}
+
+.amount {
+  display: block;
+  text-align: right;
+  padding-right: 2px;
+}
+
+.input-field2 {
+  border: 1px solid #f5f6f5 !important;
+  width: 70%;
+}
+
+
+
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+}
+
+/* .select-info {
+  
+} */
+
+.select-action-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-1 {
+  height: 34px;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #2EAEFF;
+
+}
+
+.btn-1:hover {
+  background-color: #164863;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.btn-2 {
+  height: 34px;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF934F;
+}
+
+.btn-2:hover {
+  background-color: #164863;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.custom-datepicker-input {
+  height: 34px;
+  width: 70%;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #164863;
+  background-color: #fff;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.custom-datepicker-input::placeholder {
+  color: #164863;
+}
+
+.para-words {
+  margin: 0;
+}
+
+.emp_selector {
+  height: 34px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  color: #164863;
+}
+
+.else-div {
+  margin: 10px 20px
+}
+
+.else-div h5 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #a51499, #a86ea6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 25px;
+
+}
+
+.payslip-main-form {
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 13px 0px rgba(117, 115, 117, 1);
+}
+
+.pay-slip-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+form.generate-btn {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  border: 1px solid #00000028;
+  width: 60%;
+  margin: 14px auto 2px 22px
+}
+
+.generate-btn label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.heading-pay-slip h3 {
+  margin: 20px;
+  padding: 25px 5px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d6d5d6;
+  background: #0dbef3;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.generate-btn-salary {
+  background-color: #fff;
+  border: 3px solid #164863;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: #164863;
+}
+
+.generate-btn h5 {
+  font-size: 22px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #164863, #6E94A8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.UploadPdf-btn {
+  margin-left: 22px;
+  display: flex;
+  border: 1px solid #bbb6bb;
+  width: 60%;
+}
+
+/* .sidebarnav-list {
+  height: calc(100vh - 66px) !important;
+  overflow: auto;
+} */
+
+/* width */
+aside .side-nav::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+aside .side-nav::-webkit-scrollbar-track {
+  background: #fff;
+
+}
+
+/* Handle */
+aside .side-nav::-webkit-scrollbar-thumb {
+  background: #9BBEC8;
+  /* border-radius: 10px; */
+  border: 1px solid #fff;
+}
+
+/* Handle on hover */
+aside .side-nav::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+.down-payslip {
+  display: inline-flex;
+  border: 1px solid #00000026;
+  /* gap: 40px; */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 0px 13px 0px rgba(117, 115, 117, 1);
+  background-color: #b7e7f9db;
+}
+
+.down-payslip button {
+  border: none;
+  background-color: white;
+  color: #17c2f3;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 6px;
+  
+}

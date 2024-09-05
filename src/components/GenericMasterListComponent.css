@@ -1,0 +1,80 @@
+
+.master-list-container {
+  background:linear-gradient( #6E94A8);
+  width: 100%;
+
+
+}
+  
+  .master-list-table {
+    width: 98%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    text-align: left; 
+  }
+  
+  .master-list-table th {
+    background: #fff;
+    border-color: #9BBEC8;
+    color:#000;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .master-list-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .add-button {
+    background-color: #0eb4e9;
+    height: 40px;
+    padding: 1px 15px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 5px;
+    
+  }
+  .link-button{
+    background-color: #164863;
+    height: 40px;
+    padding: 1px 15px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  .master-list-table svg {
+    font-size: 24px;
+    color: #164863;
+}
+
+  
+  .add-button:hover {
+    background-color: #164863;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  .link-button:hover{
+    background-color: #164863;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  .main-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
